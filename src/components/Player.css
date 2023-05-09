@@ -1,0 +1,78 @@
+.player{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5%;
+    animation: fadeIn 1s;
+}
+
+.player-title{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.player-title h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 36px;
+/* identical to box height, or 112% */
+
+
+color: #FFFFFF;
+
+}
+
+.player-title p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+
+color: #FFFFFF;
+
+opacity: 0.6;
+
+
+}
+
+.seeker-container{
+    width: 100%;
+    height: 6px;
+    background: #281f1f;;
+position: relative;
+z-index: 3;
+cursor: pointer;
+border-radius: 16px
+}
+
+.seeker-bar{
+    position: absolute;
+    width: 120px;
+    z-index: 2;
+    height: 6px;
+    top:0;
+    left: 0;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.seeker-controller{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seeker-main-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:17px;
+}
+
+.player-image-container img{
+    width: 480px;
+    height: 480px;
+}

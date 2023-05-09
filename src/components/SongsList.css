@@ -1,0 +1,158 @@
+
+
+.songsContainer{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    justify-content: start;
+    padding: 16px;
+}
+
+.songsContainer h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 36px;
+/* identical to box height, or 112% */
+
+
+color: #FFFFFF;
+}
+
+.searchContainer{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 8px 16px;
+gap:12px;
+
+width: 450px;
+height: 48px;
+
+margin: 7px 0;
+background: rgba(255, 255, 255, 0.08);
+border-radius: 8px;
+}
+
+.searchContainer input{
+    width: 90%;
+    outline: none;
+    border: none;
+    height: 28px;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+color: #FFFFFF !important;
+
+
+}
+
+.artistImg{
+    width: 48px;
+    height: 48px;
+    border-radius: 56px;
+    flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.28s ease-in-out;
+    cursor: pointer;
+    animation: fadeIn 1s;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+.focused{
+    background: rgba(255, 255, 255, 0.08);
+border-radius: 8px;
+padding: 16px;
+transition: all 0.28s ease-in-out;
+}
+
+.aboutSong{
+    display: flex;
+    flex-direction: row;
+    gap:17px;
+    
+}
+
+.aboutSong h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+}
+
+.aboutSong p{
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+opacity: 60%;
+
+}
+
+.duration{
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+text-align: right;
+
+color: #FFFFFF;
+
+opacity: 0.6;
+}
+
+.johncena{
+    position: absolute;
+    z-index: 4;
+    left: 30%;
+    width: 300px;
+    background-color: rgb(40, 70, 152);
+    border-radius: 7px;
+    padding: 7px ;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    animation:fadeIn 0.8s;
+}
+
+.displayOff{
+        display: none !important;
+
+}
+
+.closeBtn{
+    position: absolute;
+    right: 0;
+    font-size:20px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid white;
+    margin: 4px;
+}
